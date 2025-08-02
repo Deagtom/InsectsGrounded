@@ -1,0 +1,13 @@
+{
+  "itemGroup.insectsgrounded": "Example Mod Tab",
+  "block.insectsgrounded.example_block": "Example Block",
+  "item.insectsgrounded.example_item": "Example Item",
+
+  "insectsgrounded.configuration.title": "Insects: Grounded Configs",
+  "insectsgrounded.configuration.section.insectsgrounded.common.toml": "Insects: Grounded Configs",
+  "insectsgrounded.configuration.section.insectsgrounded.common.toml.title": "Insects: Grounded Configs",
+  "insectsgrounded.configuration.items": "Item List",
+  "insectsgrounded.configuration.logDirtBlock": "Log Dirt Block",
+  "insectsgrounded.configuration.magicNumberIntroduction": "Magic Number Text",
+  "insectsgrounded.configuration.magicNumber": "Magic Number"
+}
