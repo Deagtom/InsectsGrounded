@@ -29,28 +29,13 @@ public class InsectsGrounded {
         NeoForge.EVENT_BUS.register(this);
 
         ModCreativeModTabs.register(modEventBus);
-
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-
-        modEventBus.addListener(this::addCreative);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
-    }
-
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        /*if (event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.PEBBLET);
-            event.accept(ModItems.SPRIG);
-            event.accept(ModItems.PLANT_FIBER);
-        }
-
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
-            event.accept((ModBlocks.PLANT_FIBER_BLOCK));
-        }*/
     }
 
     @SubscribeEvent

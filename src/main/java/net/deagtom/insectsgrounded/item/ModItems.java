@@ -16,4 +16,5 @@ public class ModItems {
     public static final DeferredItem<Item> PEBBLET = ITEMS.register("pebblet", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> SPRIG = ITEMS.register("sprig", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> PLANT_FIBER = ITEMS.register("plant_fiber", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CRUDE_ROPE = ITEMS.register("crude_rope", () -> new Item(new Item.Properties()));
 }

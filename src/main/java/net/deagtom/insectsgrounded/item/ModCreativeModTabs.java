@@ -24,9 +24,13 @@ public class ModCreativeModTabs {
                     .icon(() -> new ItemStack(ModItems.PEBBLET.get()))
                     .title(Component.translatable("creativetab.insectsgrounded.insects_grounded"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        //Items
                         output.accept(ModItems.PEBBLET);
                         output.accept(ModItems.SPRIG);
                         output.accept(ModItems.PLANT_FIBER);
+                        output.accept(ModItems.CRUDE_ROPE);
+
+                        //Blocks
                         output.accept(ModBlocks.PLANT_FIBER_BLOCK);
                     })
                     .build());
