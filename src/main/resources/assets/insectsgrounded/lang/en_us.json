@@ -1,4 +1,7 @@
 {
   "item.insectsgrounded.pebblet": "Pebblet",
-  "item.insectsgrounded.sprig": "Sprig"
+  "item.insectsgrounded.sprig": "Sprig",
+  "item.insectsgrounded.plant_fiber": "Plant Fiber",
+
+  "block.insectsgrounded.plant_fiber_block": "Wall of Plant Fiber"
 }

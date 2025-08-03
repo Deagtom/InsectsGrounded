@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "insectsgrounded:block/plant_fiber_block"
+    }
+  }
+}

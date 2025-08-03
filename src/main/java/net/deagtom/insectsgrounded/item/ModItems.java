@@ -9,10 +9,11 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(InsectsGrounded.MODID);
 
-    public static final DeferredItem<Item> PEBBLET = ITEMS.register("pebblet", () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> SPRIG = ITEMS.register("sprig", () -> new Item(new Item.Properties()));
-
-    public static void register(IEventBus eventBus){
+    public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
+
+    public static final DeferredItem<Item> PEBBLET = ITEMS.register("pebblet", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SPRIG = ITEMS.register("sprig", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PLANT_FIBER = ITEMS.register("plant_fiber", () -> new Item(new Item.Properties()));
 }

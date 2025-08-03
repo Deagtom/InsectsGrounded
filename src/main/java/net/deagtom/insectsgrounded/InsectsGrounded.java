@@ -1,5 +1,6 @@
 package net.deagtom.insectsgrounded;
 
+import net.deagtom.insectsgrounded.block.ModBlocks;
 import net.deagtom.insectsgrounded.item.ModItems;
 import org.slf4j.Logger;
 
@@ -27,6 +28,7 @@ public class InsectsGrounded {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
 
@@ -40,6 +42,11 @@ public class InsectsGrounded {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.PEBBLET);
             event.accept(ModItems.SPRIG);
+            event.accept(ModItems.PLANT_FIBER);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept((ModBlocks.PLANT_FIBER_BLOCK));
         }
     }
 
