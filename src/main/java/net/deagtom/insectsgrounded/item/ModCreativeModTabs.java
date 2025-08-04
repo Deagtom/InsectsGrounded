@@ -29,9 +29,11 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.SPRIG);
                         output.accept(ModItems.PLANT_FIBER);
                         output.accept(ModItems.CRUDE_ROPE);
+                        output.accept(ModItems.EVERCHARCOAL);
 
                         //Blocks
                         output.accept(ModBlocks.PLANT_FIBER_BLOCK);
+                        output.accept(ModBlocks.EVERCHARCOAL_ORE);
                     })
                     .build());
 }

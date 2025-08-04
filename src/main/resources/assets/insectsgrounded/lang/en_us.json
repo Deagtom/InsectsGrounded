@@ -5,6 +5,8 @@
   "item.insectsgrounded.sprig": "Sprig",
   "item.insectsgrounded.plant_fiber": "Plant Fiber",
   "item.insectsgrounded.crude_rope": "Crude Rope",
+  "item.insectsgrounded.evercharcoal": "EverCharcoal",
 
-  "block.insectsgrounded.plant_fiber_block": "Wall of Plant Fiber"
+  "block.insectsgrounded.plant_fiber_block": "Block of Plant Fiber",
+  "block.insectsgrounded.evercharcoal_ore": "EverCharcoal Ore"
 }

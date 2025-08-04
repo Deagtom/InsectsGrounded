@@ -2,9 +2,11 @@ package net.deagtom.insectsgrounded.block;
 
 import net.deagtom.insectsgrounded.InsectsGrounded;
 import net.deagtom.insectsgrounded.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -34,4 +36,10 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(1f)
                     .sound(SoundType.CHERRY_LEAVES)));
+
+    public static final DeferredBlock<Block> EVERCHARCOAL_ORE = _registerBlock("evercharcoal_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2, 4),
+                    BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .sound(SoundType.STONE)));
 }
