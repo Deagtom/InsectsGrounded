@@ -1,6 +1,7 @@
 package net.deagtom.insectsgrounded.block;
 
 import net.deagtom.insectsgrounded.InsectsGrounded;
+import net.deagtom.insectsgrounded.block.custom.EvercharcoalOreBlock;
 import net.deagtom.insectsgrounded.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -34,12 +35,12 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> PLANT_FIBER_BLOCK = _registerBlock("plant_fiber_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(1f)
-                    .sound(SoundType.CHERRY_LEAVES)));
+                            .strength(1f)
+                            .sound(SoundType.CHERRY_LEAVES)));
 
     public static final DeferredBlock<Block> EVERCHARCOAL_ORE = _registerBlock("evercharcoal_ore",
-            () -> new DropExperienceBlock(UniformInt.of(2, 4),
+            () -> new EvercharcoalOreBlock(
                     BlockBehaviour.Properties.of()
-                    .strength(3f)
-                    .sound(SoundType.STONE)));
+                            .strength(3f)
+                            .sound(SoundType.STONE)));
 }

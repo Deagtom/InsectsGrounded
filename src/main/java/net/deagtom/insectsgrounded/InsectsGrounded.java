@@ -1,6 +1,7 @@
 package net.deagtom.insectsgrounded;
 
 import net.deagtom.insectsgrounded.block.ModBlocks;
+import net.deagtom.insectsgrounded.block.entity.ModBlockEntities;
 import net.deagtom.insectsgrounded.item.ModCreativeModTabs;
 import net.deagtom.insectsgrounded.item.ModItems;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -29,6 +30,7 @@ public class InsectsGrounded {
         ModCreativeModTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
