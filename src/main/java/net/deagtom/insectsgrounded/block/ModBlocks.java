@@ -41,6 +41,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> EVERCHARCOAL_ORE = _registerBlock("evercharcoal_ore",
             () -> new EvercharcoalOreBlock(
                     BlockBehaviour.Properties.of()
-                            .strength(3f)
+                            .strength(4f)
+                            .requiresCorrectToolForDrops()
                             .sound(SoundType.STONE)));
 }
