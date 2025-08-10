@@ -34,6 +34,7 @@ public class ModCreativeModTabs {
                         //Blocks
                         output.accept(ModBlocks.PLANT_FIBER_BLOCK);
                         output.accept(ModBlocks.EVERCHARCOAL_ORE);
+                        output.accept(ModBlocks.WORKBENCH);
                     })
                     .build());
 }

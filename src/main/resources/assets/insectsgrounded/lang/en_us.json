@@ -8,5 +8,6 @@
   "item.insectsgrounded.evercharcoal": "EverCharcoal",
 
   "block.insectsgrounded.plant_fiber_block": "Block of Plant Fiber",
-  "block.insectsgrounded.evercharcoal_ore": "EverCharcoal Ore"
+  "block.insectsgrounded.evercharcoal_ore": "EverCharcoal Ore",
+  "block.insectsgrounded.workbench": "Workbench"
 }

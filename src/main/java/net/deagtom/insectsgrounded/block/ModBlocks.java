@@ -44,4 +44,9 @@ public class ModBlocks {
                             .strength(4f)
                             .requiresCorrectToolForDrops()
                             .sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> WORKBENCH = _registerBlock("workbench",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1f)
+                    .sound(SoundType.WOOD)));
 }
