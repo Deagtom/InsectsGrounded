@@ -5,6 +5,7 @@ import net.deagtom.insectsgrounded.registry.ModBlockEntities;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.MenuProvider;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -24,12 +25,11 @@ public class WorkbenchBlock extends Block implements EntityBlock {
 
     @Override
     public InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
-        if (!level.isClientSide()) {
-            level.playSound(player, pos, SoundEvents.WOOD_PLACE, SoundSource.BLOCKS, 1f, 1f);
-            player.displayClientMessage(net.minecraft.network.chat.Component.literal("Workbench clicked!"), true);
-            return InteractionResult.SUCCESS;
+        if (!level.isClientSide() /* && player.getMainHandItem().isEmpty() */) {
+            level.playSound(null, pos, SoundEvents.UI_BUTTON_CLICK.value(), SoundSource.BLOCKS, 1.0F, 1.0F);
+            //player.openMenu(new MenuProvider(player.getInventory(), (WorkbenchBlockEntity) level.getBlockEntity(pos)));
         }
-        return InteractionResult.PASS;
+        return InteractionResult.SUCCESS;
     }
 
     @Nullable
