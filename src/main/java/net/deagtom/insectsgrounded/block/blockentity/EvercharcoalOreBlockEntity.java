@@ -1,6 +1,6 @@
-package net.deagtom.insectsgrounded.block.custom;
+package net.deagtom.insectsgrounded.block.blockentity;
 
-import net.deagtom.insectsgrounded.block.entity.ModBlockEntities;
+import net.deagtom.insectsgrounded.registry.ModBlockEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.entity.LivingEntity;

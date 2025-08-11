@@ -1,13 +1,12 @@
-package net.deagtom.insectsgrounded.block;
+package net.deagtom.insectsgrounded.registry;
 
 import net.deagtom.insectsgrounded.InsectsGrounded;
 import net.deagtom.insectsgrounded.block.custom.EvercharcoalOreBlock;
+import net.deagtom.insectsgrounded.block.custom.WorkbenchBlock;
 import net.deagtom.insectsgrounded.item.ModItems;
-import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -39,9 +38,13 @@ public class ModBlocks {
                             .sound(SoundType.CHERRY_LEAVES)));
 
     public static final DeferredBlock<Block> EVERCHARCOAL_ORE = _registerBlock("evercharcoal_ore",
-            () -> new EvercharcoalOreBlock(
-                    BlockBehaviour.Properties.of()
+            () -> new EvercharcoalOreBlock(BlockBehaviour.Properties.of()
                             .strength(4f)
                             .requiresCorrectToolForDrops()
                             .sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> WORKBENCH_BLOCK = _registerBlock("workbench_block",
+            () -> new WorkbenchBlock(BlockBehaviour.Properties.of()
+                            .strength(1f)
+                            .sound(SoundType.WOOD)));
 }

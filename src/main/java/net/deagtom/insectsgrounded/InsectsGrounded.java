@@ -1,7 +1,7 @@
 package net.deagtom.insectsgrounded;
 
-import net.deagtom.insectsgrounded.block.ModBlocks;
-import net.deagtom.insectsgrounded.block.entity.ModBlockEntities;
+import net.deagtom.insectsgrounded.registry.ModBlocks;
+import net.deagtom.insectsgrounded.registry.ModBlockEntities;
 import net.deagtom.insectsgrounded.item.ModCreativeModTabs;
 import net.deagtom.insectsgrounded.item.ModItems;
 import net.neoforged.bus.api.SubscribeEvent;

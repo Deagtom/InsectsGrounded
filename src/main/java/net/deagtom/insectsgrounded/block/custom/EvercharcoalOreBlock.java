@@ -1,6 +1,7 @@
 package net.deagtom.insectsgrounded.block.custom;
 
-import net.deagtom.insectsgrounded.block.entity.ModBlockEntities;
+import net.deagtom.insectsgrounded.block.blockentity.EvercharcoalOreBlockEntity;
+import net.deagtom.insectsgrounded.registry.ModBlockEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.sounds.SoundEvents;
@@ -20,7 +21,6 @@ import net.minecraft.world.phys.AABB;
 import javax.annotation.Nullable;
 
 public class EvercharcoalOreBlock extends DropExperienceBlock implements EntityBlock {
-
     public EvercharcoalOreBlock(Properties properties) {
         super(UniformInt.of(2, 4), properties);
     }

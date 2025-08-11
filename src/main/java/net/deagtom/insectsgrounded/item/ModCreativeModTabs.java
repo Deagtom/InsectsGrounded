@@ -1,7 +1,7 @@
 package net.deagtom.insectsgrounded.item;
 
 import net.deagtom.insectsgrounded.InsectsGrounded;
-import net.deagtom.insectsgrounded.block.ModBlocks;
+import net.deagtom.insectsgrounded.registry.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -34,6 +34,7 @@ public class ModCreativeModTabs {
                         //Blocks
                         output.accept(ModBlocks.PLANT_FIBER_BLOCK);
                         output.accept(ModBlocks.EVERCHARCOAL_ORE);
+                        output.accept(ModBlocks.WORKBENCH_BLOCK);
                     })
                     .build());
 }
