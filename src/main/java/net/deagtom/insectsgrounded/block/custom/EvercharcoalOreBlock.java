@@ -4,10 +4,14 @@ import net.deagtom.insectsgrounded.block.blockentity.EvercharcoalOreBlockEntity;
 import net.deagtom.insectsgrounded.registry.ModBlockEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.EntityBlock;
@@ -19,6 +23,7 @@ import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.phys.AABB;
 
 import javax.annotation.Nullable;
+import java.util.List;
 
 public class EvercharcoalOreBlock extends DropExperienceBlock implements EntityBlock {
     public EvercharcoalOreBlock(Properties properties) {
@@ -70,5 +75,11 @@ public class EvercharcoalOreBlock extends DropExperienceBlock implements EntityB
                 }
             }
         }
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+        tooltipComponents.add(Component.translatable("tooltip.insectsgrounded.evercharcoal_ore"));
+        super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 }

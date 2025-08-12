@@ -9,5 +9,7 @@
 
   "block.insectsgrounded.plant_fiber_block": "Block of Plant Fiber",
   "block.insectsgrounded.evercharcoal_ore": "EverCharcoal Ore",
-  "block.insectsgrounded.workbench_block": "Workbench"
+  "block.insectsgrounded.workbench_block": "Workbench",
+
+  "tooltip.insectsgrounded.evercharcoal_ore": "This block is very §9DANGER§r"
 }
